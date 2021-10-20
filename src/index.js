@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import 'bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de Bootstrap 4 
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Archivo Javascript de Bootstrap 4 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
