@@ -15,7 +15,7 @@ function Menu() {
                             <a className="nav-link" href="#/registrar">Registro</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">Listado</a>
+                            <a className="nav-link" href="#/listado">Listado</a>
                         </li>
                     </ul>
 

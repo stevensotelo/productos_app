@@ -7,21 +7,24 @@ import Menu from './components/menu/Menu';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Registrar from './pages/registrar/Registrar';
+import Productos from './pages/productos/Productos';
 
 function App() {
   return (
     <>
       <Menu />
+      <main className="space_header">
+        <Router>
+          <Switch>
+            {/* Pages */}
+            <Route exact path='/' component={Home} />
+            <Route path='/registrar' component={Registrar} />
+            <Route path='/listado' component={Productos} />
+          </Switch>
+        </Router>
+        <Footer />
+      </main>
 
-      <Router>
-        <Switch>
-          {/* Pages */}
-          <Route exact path='/' component={Home} />
-          <Route path='/registrar' component={Registrar} />
-        </Switch>
-      </Router>
-      
-      <Footer />
     </>
   );
 }

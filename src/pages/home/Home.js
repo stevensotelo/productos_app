@@ -11,13 +11,7 @@ function Home() {
                 {prods ? prods.map((item, idx) => (
                     <Producto name={item.name} description={item.description} />
                 )) : ""}
-            </div>
-            <button onClick={() => { setProds(prev => prev.push({ name: "Manzanas", description: "Frutas", value: 600 })) }}>
-                Agregar Manzanas
-            </button>
-            <button onClick={() => { setCounter(prev => prev + 1) }}>
-                Reacciones {counter}
-            </button>
+            </div>            
         </div>
     );
 }
